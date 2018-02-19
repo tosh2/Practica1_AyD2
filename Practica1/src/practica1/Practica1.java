@@ -23,6 +23,11 @@ public class Practica1 {
         
         //System.out.println("El resultado es: " + Double.toString(resultado));
         
+        
+        double radicando = 8;
+        System.out.println("La raiz cuadrada de " + radicando + " es: " + Practica1.raizCubica(radicando));
+        
+        
     }
     
     public static int factorial(int n){
@@ -30,6 +35,15 @@ public class Practica1 {
             return 1;
         else
             return (n*factorial(n-1));
+    }
+    
+    /***
+     * Funcion que calcula la raiz cubica del numero envidado por parametro
+     * @param radicando Valor a calcular la raiz cuadrada
+     * @return raiz cuadra del numero enviado por parametro
+     */
+    public static double raizCubica(double radicando){
+        return Math.pow(radicando, (double)1/3);
     }
     
 }

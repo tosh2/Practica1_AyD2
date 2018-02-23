@@ -64,7 +64,7 @@ public class Practica1 {
      * @param val1,val2 numeros a multiplicar
      * @return retorna la multiplicacion de los 2 numeros
      */
-    public static double operar(double val1,double val2) ){
+    public static double Multiplicar(double val1,double val2) ){
         return val1*val2;
     }
 
@@ -73,8 +73,13 @@ public class Practica1 {
      * @param val1,val2 numeros a dividir
      * @return retorna la division de los 2 numeros
      */
-    public static double operar(double val1,double val2) ){
-        return val1/val2;
+    public static double Dividir(double val1,double val2) ){
+        if(val2==0){
+            System.out.println("Error... El divisor no puede ser cero");
+            return 0.0;
+        }else{
+            return val1/val2;
+        }
     }
 
 }

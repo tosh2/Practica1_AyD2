@@ -20,24 +20,28 @@ public class Practica1 {
         // TODO code application logic here
         //potenciaCuadrado pc = new potenciaCuadrado();
         //double resultado = pc.potenciaCuadrado(5);
-        
+
         //System.out.println("El resultado es: " + Double.toString(resultado));
-        
-        
+
+        /*
         double radicando = 8;
         System.out.println("La raiz cuadrada de " + radicando + " es: " + Practica1.raizCubica(radicando));
-        
-        
+        */
+
+        double base = 2;
+        System.out.println("" + base + " al cubo es: " + Practica1.potenciaCubo(base));
+
+
     }
-    
+
     public static int factorial(int n){
         if(n == 0)
             return 1;
         else
             return (n*factorial(n-1));
     }
-    
-    /***
+
+    /**
      * Funcion que calcula la raiz cubica del numero envidado por parametro
      * @param radicando Valor a calcular la raiz cuadrada
      * @return raiz cuadra del numero enviado por parametro
@@ -45,5 +49,14 @@ public class Practica1 {
     public static double raizCubica(double radicando){
         return Math.pow(radicando, (double)1/3);
     }
-    
+
+    /**
+     * Funcion que calcula la potencia al cubo del numero enviado por parametro
+     * @param base Valor a elevar al cubo
+     * @return retorna el numero enviado como base a la potencia 3
+     */
+    public static double potenciaCubo(double base){
+        return Math.pow(base, (double)3);
+    }
+
 }

@@ -59,4 +59,22 @@ public class Practica1 {
         return Math.pow(base, (double)3);
     }
 
+    /**
+     * Funcion que multiplica 2 numeros 
+     * @param val1,val2 numeros a multiplicar
+     * @return retorna la multiplicacion de los 2 numeros
+     */
+    public static double operar(double val1,double val2) ){
+        return val1*val2;
+    }
+
+    /**
+     * Funcion que divide 2 numeros o
+     * @param val1,val2 numeros a dividir
+     * @return retorna la division de los 2 numeros
+     */
+    public static double operar(double val1,double val2) ){
+        return val1/val2;
+    }
+
 }
